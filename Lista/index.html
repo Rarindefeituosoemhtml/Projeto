@@ -4,24 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista</title>
+    <title>Lista - Oversized</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Assets/assets/cake.png" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Julius+Sans+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 
 </head>
 
-<body>
-    <header>
-        <div class="">
+<main>
 
+    <body>
+        <h1>Lista</h1>
+    </body>
+
+    <div class="filters">
+        <button onclick="filtercategoria(all)">Todos</button>
+        <button onclick="filtercategoria(preta)">Preta</button>
+        <button onclick="filtercategoria(branca)">Branca</button>
+    </div>
+
+    <section id="list">
+
+        <div class="card" data-categoria="preta">
+            <div class="meta">
+                <div class="type">Tipo: oversized</div>
+                <div class="badge preta">Preta</div>
+            </div>
+            <p class="desc">Descrição: Luck</p>
         </div>
 
-    </header>
-</body>
+        <div class="card" data-categoria="preta">
+            <div class="meta">
+                <div class="type">Tipo: oversized</div>
+                <div class="badge preta">Preta</div>
+            </div>
+            <p class="desc">Descrição: Luck</p>
+        </div>
 
-</html>
+        <div class="card" data-categoria="branca">
+            <div class="meta">
+                <div class="type">Tipo: oversized</div>
+                <div class="badge branca">Branca</div>
+            </div>
+            <p class="desc">Descrição: Drop</p>
+        </div>
+
+        <div class="card" data-categoria="branca">
+            <div class="meta">
+                <div class="type">Tipo: oversized</div>
+                <div class="badge branca">Branca</div>
+            </div>
+            <p class="desc">Descrição: Skull drop</p>
+        </div>
+    </section>
+
+    <table>
+        <thead>
+            <tr>Tipo</tr>
+            <tr>Descrição</tr>
+            <tr>Categoria</tr>
+        </thead>
+    </table>
+    <tbody>
+
+    </tbody>
+
+</main>
+<footer class="rodape">
+    <p>Rarin®</p>
+
+</footer>
