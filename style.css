@@ -1,0 +1,115 @@
+*{
+   
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+    
+    
+    
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+header{
+   background-color: #4F4F4F;
+   height: 100px;
+   width: none;
+   padding-top: 25px;
+   justify-content: space-between;
+   align-items: center;
+  }
+
+
+
+
+  header svg{
+
+  width: 50px;  
+  height: 35px;
+  color: #ffffff;
+}
+
+
+
+header h1{
+   text-align: center;
+   color: aliceblue;
+   
+}
+
+.icon_bolsa{
+ margin: 0 0 10px 0;
+
+}
+ 
+.icon_user{
+  margin: 0 20px;
+}
+
+
+header svg,
+.box_search{
+ position: relative;
+ bottom: 30px;
+}
+
+
+.icons_esquerda{
+ display: flex;
+ gap: 10px;
+
+ }
+ .icons_direita{
+ display: flex;
+ justify-content: right;
+ position: relative;
+ bottom: 30px;
+ 
+ 
+ }
+
+
+ /*SECAO MAIN/**/
+
+main{
+
+background-color: rgb(255, 255, 255);
+height: 1000px;
+width: 100%;
+
+}
+
+.container_size{
+text-align: center;
+margin-top:80px ;
+font-size: 30px;
+
+
+
+}
+
+
+
+
+
+.titulo_modelos{
+text-align: center;
+margin-top:80px ;
+font-size: 30px;
+}
+
+.camisas{
+color: aqua;
+text-decoration:none;
+
+}
+
+.cards{
+
+text-align: center;
+
+}
