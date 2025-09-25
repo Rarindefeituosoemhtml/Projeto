@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -8,30 +8,23 @@
 }
 
 
-.acessivel {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+
+
+body {
+    background-color: #FFFFFF
 }
 
-body{
-    background-color: #FFFFFF;
-}
-
-header{
+header {
     background-color: #4f4f4f;
     display: flex;
     justify-content: space-between;
     padding: 20PX 20PX;
     align-items: center;
 
-   
+
 }
 
-.container_cabecalho{
+.container_cabecalho {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -41,55 +34,105 @@ header{
     align-items: center;
 }
 
-.icone_menu{
+.icone_menu {
     height: 40px;
     cursor: pointer;
 
 }
 
-H1{
-    height: 40px; 
-    text-align: center; 
+H1 {
+    height: 40px;
+    text-align: center;
     color: #FFFFFF;
+
 }
 
+/* Cadastro */
 .container_cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container_cadastro h2{
+.container_cadastro h2 {
     font-size: 50px;
     margin-top: 100px;
+    text-align: center;
+
 }
 
 
 
-.box_cadastro{
+.box_cadastro {
     display: flex;
     justify-content: center;
     width: 90%;
     max-width: 1400px;
-   
+
+
+
 }
 
-.box_cadastro label{
+.Cadastro_coluna1 {
+    width: 45%;
+
+}
+
+.Cadastro_coluna2 {
+    width: 45%;
+}
+
+.Cadastro_coluna2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.box_cadastro label {
     font-size: 20px;
+
 }
 
 .box_cadastro input[type="text"] {
     border-radius: 5px;
     border: solid 1px #b3b3b3;
     font-size: 30px;
+    color: #FFFFFF;
     padding: 0 10px;
     background-color: #3C444C;
 }
 
 
+.box_cadastro textarea {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: solid 1px #b3b3b3;
+    font-size: 50px;
+    margin: 10px 0;
+    color: #FFFFFF;
+    padding: 0 10PX;
+    background-color: #3C444C;
+    box-shadow: 0 4px 4px 2px #00000025;
+
+}
+
+.box_cadastro{
+    resize: none;
+    height: 200px;
+}
+
+.container_cadastro input{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: solid 1px #b3b3b3;
+    font-size: 26px;
+    margin: 10px 0;
+    padding: 0px 10px;
+    box-shadow: 0 4px 4px 2px #00000025;
+      
+}
 
 
-
-
-    
- 
