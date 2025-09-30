@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -83,6 +83,10 @@ img {
     text-align: center;
 }
 
+h2{
+    font-size: 30px;
+}
+
 
 /* rodapé */
 footer {
@@ -95,22 +99,25 @@ footer {
     color: #f5f5f5;
 }
 
-footer p{
-    margin: 5px 10px 8px;
+footer p {
+    margin: 8px 10px 8px;
     font-size: 20px;
 }
 
 
-.meio img{
-    width: 30px;
-    height: 30px;
+.meio .face {
+    width: 37px;
+    height: 37px;
+    
 }
 
-.direita img{
+.direita img {
     display: flex;
-    width: 220px;
-    height: 220px;
-    align-items: center;
+    width: 250px;
+    height: 165px;
+    padding-bottom: 20px;
+
+
 }
 
 
@@ -118,18 +125,18 @@ footer p{
 
 /* MEDIA */
 @media screen and (max-width: 1000px) {
-  .container {
-    width: 98%;
-  }
+    .container {
+        width: 98%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    .container {
+        flex-direction: column;
+    }
 
-  .titulo,
-  .cards{
-    width: 100%;
-  }
+    .titulo,
+    .cards {
+        width: 100%;
+    }
 }
