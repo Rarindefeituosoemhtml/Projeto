@@ -139,4 +139,13 @@ footer p {
     .cards {
         width: 100%;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+       
+    }
+
+    
 }
