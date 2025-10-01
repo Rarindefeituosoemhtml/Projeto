@@ -42,53 +42,63 @@ header {
 
 H1 {
     height: 40px;
-    text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
+
+
+
+
 
 /* Cadastro */
 .box_cadastro {
     display: flex;
+    width: 90%;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 30px;
+  
+   
+}
+
+.container_cadastro {
+    display: flex;
     flex-direction: column;
     align-items: center;
-   margin-left: 13%;
+
 }
 
 .container_cadastro h2 {
     font-size: 50px;
     margin-top: 100px;
     text-align: center;
+    
+}
 
+.container_cadastro .confirmar {
+    margin-top: 50px;
+   
 }
 
 
 
-.box_cadastro {
+
+.Cadastro_coluna1 {
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
-}
-
-.Cadastro_coluna1 {
-    width: 47%;
-
-}
-
-.Cadastro_coluna1 {
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-}
-
-.Cadastro_coluna2 {
     width: 47%;
 }
+
+
+
 
 .Cadastro_coluna2 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    width: 47%;
 }
 
 
@@ -101,23 +111,16 @@ H1 {
 .box_cadastro input[type="text"] {
     border-radius: 5px;
     border: solid 1px #b3b3b3;
-    font-size: 30px;
+    font-size: 18px;
     color: #FFFFFF;
     padding: 0 10px;
     background-color: #3C444C;
     justify-content: space-between;
-}
-
-.box_cadastro input[type="text"] {
-    height: 40px;
-    margin-bottom: 20px;
+    height: 68px;
     width: 100%;
 }
 
-.box_cadastro textarea {
-    resize: none;
-    height: 200px;
-}
+
 
 
 
@@ -128,58 +131,65 @@ H1 {
     justify-content: space-between;
     border-radius: 5px;
     border: solid 1px #b3b3b3;
-    font-size: 50px;
-    margin: 5px 0;
+    font-size: 18px;
     color: #FFFFFF;
-    padding: 0 10PX;
+    padding: 0 10px;
     background-color: #3C444C;
     box-shadow: 0 4px 4px 2px #00000025;
-
-}
-
-
-.box_cadastro {
     resize: none;
-    height: 300px;
-    width: 100%;
+    height: 200px;
+
 }
+
+
 
 .container_cadastro input {
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
     border: solid 1px #b3b3b3;
-    margin: 10px 0;
     padding: 0px 10px;
     box-shadow: 0 4px 4px 2px #00000025;
+    
 }
 
 
 .container_cadastro input[type="button"] {
     font-size: 30px;
     background-color: #3C444C;
-    cursor: pointer;
+    color: #FFFFFF;
+    width: 24%;
+    height: 68px;
+    cursor: pointer;   
 }
 
 
-@media screen and (max-width: 1000px) {
-    table {
-        width: 98%;
+
+    
+
+
+@media screen and (max-width: 600px) {
+    
+    .container_cadastro input[type="button"] {
+        width: 35%;
+          
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .box_cadastro {
+    .box_cadastro{
         flex-direction: column;
+        height: 400px;
     }
-
-    .cadastro_coluna1,
-    .cadastro_coluna2 {
+    
+    .Cadastro_coluna1{
         width: 100%;
     }
-
-    .container_cadastro input[type="button"] {
-        padding: 10px 100px;
+    
+    .Cadastro_coluna2{
+        width: 100%;
     }
+     
 }
+
+
+
+    
