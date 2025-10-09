@@ -1,27 +1,32 @@
 * {
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* box-sizing: border-box; */
     font-family: "Bellota", system-ui;
+    color: #000000;
 }
 
 body {
     font-family: 'Bebas Neue', sans-serif;
     background-color: #fff;
     color: #fff;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+h1{
+    font-size: 50px;
+    
+}
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
-    background: #333;
+    /* background: #333; */
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -157,11 +162,13 @@ main {
     flex: 1; /* faz o conteúdo crescer e empurrar o footer para baixo */
 }
 
-footer {
+.rodape {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 15px;
+    width: 100%;
+    
 }
 
 
@@ -171,4 +178,11 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  .secao_card{
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+
