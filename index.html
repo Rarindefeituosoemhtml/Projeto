@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <div id="sombra"></div>
+    <header>
+        <h1>wear rarin</h1>
+
+        <div class="icons">
+            <a class="menu_barras" href="#" onclick="mostrarMenu()" title="Abrir menu">
+                <span class="visually-hidden">Abrir menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
+                    <path fill="currentColor"
+                        d="M0 72c0-4.4 3.6-8 8-8l432 0c4.4 0 8 3.6 8 8s-3.6 8-8 8L8 80c-4.4 0-8-3.6-8-8zM0 256c0-4.4 3.6-8 8-8l432 0c4.4 0 8 3.6 8 8s-3.6 8-8 8L8 264c-4.4 0-8-3.6-8-8zM448 440c0 4.4-3.6 8-8 8L8 448c-4.4 0-8-3.6-8-8s3.6-8 8-8l432 0c4.4 0 8 3.6 8 8z" />
+                </svg>
+            </a>
+            <div class="box_busca" id="box_busca">
+                <svg class="icone_lupa" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
+                    <path fill="currentColor"
+                        d="M464 272C464 166 378 80 272 80C166 80 80 166 80 272C80 378 166 464 272 464C378 464 464 378 464 272zM413.3 424.6C376.2 459 326.6 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272C480 326.6 459 376.2 424.6 413.3L573.6 562.3C576.7 565.4 576.7 570.5 573.6 573.6C570.5 576.7 565.4 576.7 562.3 573.6L413.3 424.6z" />
+                </svg>
+                <label for="campo_busca" class="visually-hidden">Buscar produtos</label>
+                <input class="campo_busca" type="text" name="" id="campo_busca" placeholder="Buscar produtos..."
+                    title="Buscar produtos">
+            </div>
+        </div>
+
+
+        <div class="icons_fim">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
+                <path fill="currentColor"
+                    d="M240 128L240 192L400 192L400 128C400 83.8 364.2 48 320 48C275.8 48 240 83.8 240 128zM224 208L144 208C126.3 208 112 222.3 112 240L112 448C112 492.2 147.8 528 192 528L448 528C492.2 528 528 492.2 528 448L528 240C528 222.3 513.7 208 496 208L416 208L416 280C416 284.4 412.4 288 408 288C403.6 288 400 284.4 400 280L400 208L240 208L240 280C240 284.4 236.4 288 232 288C227.6 288 224 284.4 224 280L224 208zM224 192L224 128C224 75 267 32 320 32C373 32 416 75 416 128L416 192L496 192C522.5 192 544 213.5 544 240L544 448C544 501 501 544 448 544L192 544C139 544 96 501 96 448L96 240C96 213.5 117.5 192 144 192L224 192z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
+                <path fill="currentColor"
+                    d="M112 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zm240 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM16 480c0-88.4 71.6-160 160-160l96 0c88.4 0 160 71.6 160 160l0 24c0 4.4 3.6 8 8 8s8-3.6 8-8l0-24c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 24c0 4.4 3.6 8 8 8s8-3.6 8-8l0-24z" />
+            </svg>
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/banner (1).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner (1).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner (1).png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <section class="container">
+
+            <div class="titulo">
+                <span>OVERSIZED</span>
+            </div>
+
+            <section class="cards">
+
+                <div class="card_produtos">
+
+                    <img src="assets/DropDadoCostasPreta.png" alt="">
+
+                    <h2>drop lock</h2>
+
+                </div>
+
+                <div class="card_produtos">
+
+                    <img src="assets/DropMaskFrente.png" alt="">
+
+                    <h2>mask off
+                        black
+                    </h2>
+
+                </div>
+
+                <div class="card_produtos">
+
+                    <img src="../secao_produtos/assets/DropCaveira2.png" alt="">
+
+                    <h2>skull drop
+                        white
+                    </h2>
+
+                </div>
+
+                <div class="card_produtos">
+
+                    <img src="assets/DropDadoFrente.png" alt="">
+
+                    <h2>drop lock
+                        white
+                    </h2>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="esquerda">
+            <p>Início</p>
+            <p>Produtos</p>
+            <p>Quem somos</p>
+            <p>Departamentos</p>
+            <p>Trocas e devoluções</p>
+        </div>
+
+        <div class="meio">
+            <p>Entre em contato:</p>
+            <p>WEARRARIN@GMAIL.COM</p>
+            <p>+55 963427707</p>
+            <p> <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+
+                <svg class="face" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z" />
+                </svg>
+            </p>
+        </div>
+
+        <div class="direita">
+            <p><img src="../secao_produtos/assets/Group 19.svg" alt=""></p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
