@@ -9,7 +9,7 @@ function mostrarMenu() {
         sombra.style.top = "-210px";//escondida
         busca.style.top = "-100px";
         menu.style.position = "absolute";
-        busca.style.transition = ".5s";
+        busca.style.transition = ".7s";
     } else {/*se não*/
         sombra.style.top = "0";//exibido
         busca.style.top = "120px";

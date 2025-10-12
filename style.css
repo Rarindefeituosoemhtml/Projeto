@@ -61,7 +61,7 @@ header {
 
 .box_busca {
     position: relative;
-    width: 60%;
+    width: 200px;
     max-width: 500px;
     margin: 0 10px;
 }
@@ -173,15 +173,11 @@ footer p {
     .container {
         width: 98%;
     }
+
 }
 
 @media screen and (max-width: 768px) {
 
-    h1 {
-
-        display: flex;
-        align-content: center;
-    }
 
     .box_busca {
         position: fixed;
@@ -189,7 +185,7 @@ footer p {
         top: -100px;
         z-index: 2;
         right: 30px;
-        transition: .6s;
+        transition: .9s;
         width: 80%;
     }
 
